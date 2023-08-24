@@ -1,6 +1,6 @@
 {
-	"homepage": "https://robloxlegends.vercel.app",
-	"name": "reactgram_frontend",
+	"homepage": "https://robloxlegends.vercel.app/front",
+	"name": "legendsroblox",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
