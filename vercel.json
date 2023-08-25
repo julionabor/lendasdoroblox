@@ -27,8 +27,10 @@
 			"dest": "/client/$1.png"
 		},
 		{
-			"src": "/(.*)",
+			"src": "/front/(.*)",
 			"dest": "/client/index.html"
 		}
-	]
+	],
+
+	"rewrites": [{ "src": "/(.*)", "dest": "front/public/index.html" }]
 }

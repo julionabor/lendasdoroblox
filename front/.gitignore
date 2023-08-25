@@ -1,2 +1,2 @@
 .vercel
-./front/node_modules
+node_modules
