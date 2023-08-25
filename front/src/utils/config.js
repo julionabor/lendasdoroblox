@@ -1,5 +1,5 @@
-export const api = "http://localhost:80/api";
-export const uploads = "http://localhost:80/uploads";
+export const api = "https://api-robloxlegends.vercel.app/api";
+export const uploads = "https://api-robloxlegends.vercel.app/uploads";
 
 export const requestConfig = (method, data, token = null, image = null) => {
 	let config;
