@@ -1,5 +1,5 @@
-export const api = "https://api-robloxlegends.vercel.app/api";
-export const uploads = "https://api-robloxlegends.vercel.app/uploads";
+export const api = "https://lendasdoroblox-api.vercel.app/api";
+export const uploads = "https://lendasdoroblox-api/uploads";
 
 export const requestConfig = (method, data, token = null, image = null) => {
 	let config;
