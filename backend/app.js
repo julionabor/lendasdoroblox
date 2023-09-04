@@ -8,10 +8,10 @@ const port = process.env.PORT;
 
 const app = express();
 // Solve CORS
-app.use(cors({ credentials: true, origin: "https://lendasdoroblox.vercel.app/" }));
+app.use(cors({ credentials: true, origin: "https://lendasdoroblox.onrender.com/" }));
 // Add Access Control Allow Origin headers
 app.use((req, res, next) => {
-	res.setHeader("Access-Control-Allow-Origin", "https://lendasdoroblox.vercel.app/");
+	res.setHeader("Access-Control-Allow-Origin", "https://lendasdoroblox.onrender.com/");
 	
 	next();
 });
