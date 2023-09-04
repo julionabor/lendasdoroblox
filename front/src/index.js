@@ -19,7 +19,9 @@ import { store } from "./store";
 const root = document.getElementById("root"); // <- This is the //correct method call for React version 17
 render(
 	<React.StrictMode>
-		<App />
+		<Provider store={store}>
+			<App />
+		</Provider>
 	</React.StrictMode>,
 	root
 );
