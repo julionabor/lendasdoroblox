@@ -8,11 +8,14 @@ const port = process.env.PORT;
 
 const app = express();
 // Solve CORS
-app.use(cors({ credentials: true, origin: "https://lendasdoroblox.onrender.com" }));
+app.use(
+	cors({ credentials: true, origin: "https://lendasdoroblox.onrender.com" })
+);
 // Add Access Control Allow Origin headers
 app.use((req, res, next) => {
-	res.setHeader("Access-Control-Allow-Origin", "*");
-	res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');	
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+	res.header("Access-Control-Allow-Headers", "X-Requested-With");
 	next();
 });
 // Config JSON and form data response
@@ -24,7 +27,6 @@ app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 
 // db connection
 require("./config/db.js");
-
 
 // routes
 const router = require("./routes/Router.js");
