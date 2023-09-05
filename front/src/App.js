@@ -38,11 +38,11 @@ function App() {
 						/>
 						<Route
 							path="/users/:id"
-							element={auth ? <Profile  /> : <Navigate to="/login" />}
+							element={auth ? <Profile /> : <Navigate to="/login" />}
 						/>
 						<Route
 							path="/photos/:id"
-							element={auth ? <Photo  /> : <Navigate to="/login" />}
+							element={auth ? <Photo /> : <Navigate to="/login" />}
 						/>
 						<Route
 							path="/search"
@@ -54,6 +54,10 @@ function App() {
 						/>
 						<Route
 							path="/register"
+							element={!auth ? <Register /> : <Navigate to="/" />}
+						/>
+						<Route
+							path="*"
 							element={!auth ? <Register /> : <Navigate to="/" />}
 						/>
 					</Routes>
